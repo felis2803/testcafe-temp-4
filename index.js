@@ -1,6 +1,6 @@
 import { Selector, ClientFunction } from 'testcafe';
 
-fixture('Fixture').page('file:///C:/projects/testcafe-temp-4/index.html');
+fixture('Fixture').page('./index.html');
 
 const setStyle = ClientFunction((selector, key, value) => {
     document.querySelector(selector).style[key] = value;
